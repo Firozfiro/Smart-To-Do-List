@@ -1,0 +1,190 @@
+:root {
+    --addtask-btn: #00ff08;
+    --edit-btn: #FF9800;
+    --del-btn: #F44336;
+    --checkbox: #00BCD4;
+    --backgroung-li: #795548;
+    --border: #607D8B;
+    --caret: #E91E63;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background: #fff;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+#task-input {
+    caret-color: var(--checkbox);
+    width: 70%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--checkbox);
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#task-input:focus {
+    border: 2px solid var(--checkbox);
+    box-shadow: 0 0 20px var(--checkbox);
+}
+
+#task-input::placeholder {
+    color: var(--border);
+}
+
+#add-btn {
+    background: transparent;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--addtask-btn);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+#add-btn:hover {
+    background: var(--addtask-btn);
+}
+
+
+#task-list {
+    text-decoration: none;
+}
+
+#task-list li {
+    background: lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#task-list li span {
+    flex: 1;
+    overflow-wrap: break-word;
+}
+
+#task-list button {
+    flex-shrink: 0;
+}
+
+.edit-btn {
+    background: transparent;
+    color: black;
+    border: 2px solid var(--edit-btn);
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+    transition: 0.3s ease-in;
+}
+
+.edit-btn:hover {
+    background: var(--edit-btn);
+    color: #ffffff;
+}
+
+.delete-btn {
+    background: transparent;
+    border: 2px solid var(--del-btn);
+    border-radius: 5px;
+    color: black;
+    margin-left: 10px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.delete-btn:hover {
+    background: var(--del-btn);
+    color: #ffffff;
+}
+
+.list {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+}
+
+p a {
+  color: var(--checkbox);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+p a:hover {
+  color: #0056b3;
+  text-shadow: 0 0 5px rgba(0, 123, 255, 0.6);
+}
+
+@media (max-width: 450px) {
+    .container {
+        max-width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    #task-input {
+        width: 70%;   
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    #add-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #task-list li {
+        font-size: 16px;
+        padding: 8px;
+        gap: 5px;   
+    }
+
+    .edit-btn,
+    .delete-btn {
+        font-size: 14px;
+        padding: 4px 6px;
+    }
+}
+
+@media (max-width:400px) {
+    #task-input {
+        width: 65%;
+    }
+}
+@media (max-width:340px) {
+    #task-input {
+        width: 50%;
+    }
+}
+
+
+
