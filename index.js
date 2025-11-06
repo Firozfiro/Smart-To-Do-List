@@ -1,6 +1,6 @@
 // 👉 (NEW) Add your backend API base URL
 // const API_BASE = "http://localhost:3000"; 
-const API_BASE = "https://firoz-backend-1st-project.onrender.com"; 
+const API_BASE = "https://firoz-backend-1st-project.onrender.com";
 // Change to your deployed backend URL later (e.g. https://your-backend.onrender.com)
 
 let input = document.getElementById("task-input");
